@@ -1,0 +1,219 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?   
+
+- intent: stock_prediction_info
+  examples: |
+   - about stock market price prediction
+   - what is stock market price prediction
+   - how will you help me predict stock market prices
+   - tell me about stock market price prediction
+   - stock market price prediction
+   - how accurate are stock market predictions
+   - methods for stock market price prediction
+   - why use stock market price prediction
+   - advantages of stock market prediction
+   - information about stock market price prediction
+   - why use stock market price prediction models
+
+- intent: stock_market
+  examples: |
+   - How would you describe the prevailing trends in today's stock market?
+   - What is the current trajectory of the stock market's movements?
+   - Could you provide insights into the present trends shaping the stock market?
+   - What patterns or tendencies are evident in the stock market at this time?
+   - How are stocks generally faring in today's market climate?
+   - What is the overall direction of the stock market's behavior presently?
+   - Can you summarize the current trends investors are observing in the stock market?
+   - In what manner is the stock market currently evolving?
+
+
+- intent: movement
+  examples: |
+    - What factors are influencing the stock market's movement today?
+    - What are the primary drivers behind the stock market's movements today?
+    - What are the key factors shaping today's stock market movements?
+    - What are the major influences on the stock market's performance as of today?
+    - What are the contributing factors affecting the stock market's movement at present?
+
+- intent: future
+  examples: |
+   - How do you predict the market will perform in the near future?
+   - What methods do you use to forecast the market's performance in the coming weeks or months?
+   - How do you anticipate the market will fare in the near future based on current trends and data?
+   - What factors do you consider when projecting the market's direction over the next few weeks?
+   - What strategies do you employ to gauge the market's potential movements in the short term?
+   - How do you assess the outlook for the market in the immediate future?
+   - What indicators or signals do you rely on to make predictions about the market's performance in the upcoming period?
+
+
+
+- intent: economic
+  examples: |
+   - Could you explain the impact of recent economic events on stock prices?
+   - What are the repercussions of recent economic events on the fluctuations in stock prices?
+   - How have recent economic developments influenced the movement of stock prices?
+   - Can you elaborate on how recent economic events have affected the valuation of stocks?
+   - How have recent economic developments influenced the movement of stock prices?
+   - Can you elaborate on how recent economic events have affected the valuation of stocks?
+
+
+- intent: factors
+  examples: |
+    - What are some factors that investors should be cautious about in the current market environment? 
+    - What potential hazards should investors be mindful of amidst the present market conditions?
+    - Can you outline some of the risks that investors should be aware of given the current state of the market?
+    - What are the key challenges that investors may face in the current market climate?
+    - What are the downside risks that investors need to be cognizant of in today's market landscape?
+    - What are some of the vulnerabilities that investors should be wary of during the current market scenario?
+
+
+- intent: volatility
+  examples: |
+   - In what ways does investor sentiment contribute to fluctuations in market volatility?
+   - How does the mood and attitude of investors impact the level of volatility in the market?
+   - Can you elaborate on the relationship between investor sentiment and the degree of market volatility?
+   - What role does investor perception and confidence play in influencing the level of volatility in the market?
+   - How does the sentiment of investors contribute to the ebb and flow of market volatility?
+   - What impact does investor sentiment have on the magnitude of fluctuations in market prices?
+   - In what manner does investor sentiment influence the level of uncertainty and fluctuations in the market?
+   - Can you explain how shifts in investor sentiment contribute to changes in market volatility?
+
+- intent: benchmarks
+  examples: |
+   - What are the primary metrics or indicators you rely on to evaluate the overall health of the stock market?
+   - What are the key benchmarks or measures you utilize to gauge the well-being of the stock market?
+   - Can you elaborate on the essential indicators or signals you consider when assessing the health of the stock market?
+   - In your analysis of the stock market, what are the fundamental indicators that you prioritize for evaluating its health?
+   - What criteria or metrics do you consider most important when evaluating the vitality of the stock market?
+   - What are the main factors or benchmarks you examine to determine the robustness of the stock market?
+   - Can you discuss the primary indicators or benchmarks that guide your assessment of the stock market's condition?
+   - What are the primary indicators or benchmarks you use to gauge the strength and resilience of the stock market?
+
+
+- intent: uncertainty
+  examples: |
+   - What changes can be observed in market behavior during periods characterized by economic uncertainty?
+   - How does market conduct deviate during times when economic uncertainty prevails?
+   - In what ways does market behavior alter in response to heightened economic uncertainty?
+   - Can you describe the shifts in market dynamics that occur during periods of economic uncertainty?
+   - What distinctions in market behavior emerge when economic uncertainty becomes a prevailing factor?
+   - How does economic uncertainty influence the behavior of market participants and shape market outcomes?
+   - What are the variations in market conduct that arise when economic uncertainty is heightened?
+   - How does the market's response differ during times of economic uncertainty compared to periods of stability?
+   
+- intent: government
+  examples: |
+   - How does government policy impact the dynamics of the stock market?
+   - What influence does government policy have on shaping stock market trends and behavior?
+   - In what ways does government policy shape the direction and performance of the stock market?
+   - Can you elaborate on the role of government policy in influencing stock market movements and investor sentiment?
+   - How does government intervention affect the functioning and stability of the stock market?
+   - What role do government regulations and fiscal measures play in shaping investor behavior and market outcomes?
+   - What are the implications of government policy initiatives on investor confidence and market sentiment in the stock market?
+   - What impact do changes in government policy, such as tax reforms or stimulus packages, have on stock market valuations and performance?
+
+
+
+
+
+- intent: my_name_is
+  examples: |
+   - i am <NAME>
+   - I'm [Palak] (person)
+   - My name is [<NAME>] (person)
+   - [Sameer] (person)
+
+  
+    
+
+   

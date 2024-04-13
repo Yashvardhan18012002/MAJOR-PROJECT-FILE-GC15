@@ -1,0 +1,93 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: stock_prediction_info path
+  steps:
+  - intent: stock_prediction_info
+  - action: utter_stock_prediction_info
+
+- story: stock_market path
+  steps:
+  - intent: stock_market
+  - action: utter_stock_market
+
+
+- story: movement path
+  steps:
+  - intent: movement
+  - action: utter_movement
+
+
+
+- story: future path
+  steps:
+  - intent: future
+  - action: utter_future
+
+
+- story: economic path
+  steps:
+  - intent: economic
+  - action: utter_economic
+
+- story: factors path
+  steps:
+  - intent: factors
+  - action: utter_factors
+
+
+
+- story: volatility path
+  steps:
+  - intent: volatility
+  - action: utter_volatility
+
+
+- story: benchmarks path
+  steps:
+  - intent: benchmarks
+  - action: utter_benchmarks
+
+- story: uncertainty path
+  steps:
+  - intent: uncertainty
+  - action: utter_uncertainty
+
+- story: government path
+  steps:
+  - intent: government
+  - action: utter_government
+
+- story: my_name_is path
+  steps:
+  - intent: my_name_is
+  - action: utter_my_name_is
